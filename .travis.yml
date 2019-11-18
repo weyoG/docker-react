@@ -7,7 +7,7 @@ before_install:
   - docker build -t weyombo/docker-react -f dockerfile.dev .
 
 script:
-  - docker run weyombo/docker-react npm run test -- --coverage
+  ##- docker run weyombo/docker-react npm run test -- --coverage
 
 deploy:
   edge: true
